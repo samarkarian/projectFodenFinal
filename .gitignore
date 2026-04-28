@@ -12,5 +12,11 @@ settings.json
 # Ignorer les fichiers de cache ou de logs
 *.log
 
+# Ignorer les vidéos (hébergées sur S3)
+*.mp4
+*.mov
+*.avi
+*.webm
+
 # Ignorer les fichiers générés par TailwindCSS
 /public/output.css

@@ -7,6 +7,9 @@
   <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
   <link rel="manifest" href="./favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./public/output.css">
   <link rel="stylesheet" href="index.css">
@@ -34,32 +37,36 @@
     </div>
   </header>
 
-  <main class="flex-1 flex items-center justify-center pt-20 pb-12 px-4 mt-14">
-    <div class="contact-grid w-full max-w-5xl mx-auto">
+  <main class="flex-1 pt-16">
 
-      <!-- Gauche : photo -->
-      <div class="contact-photo-panel rounded-2xl overflow-hidden">
-        <img src="./content/IMG_8592.JPG" alt="Fodé Niang" class="w-full h-full object-cover">
+    <!-- Hero photo -->
+    <section class="contact-hero relative w-full h-[60vh] overflow-hidden">
+      <img src="./content/contact.jpg" alt="Contact" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="absolute inset-0 flex items-center px-8 sm:px-16 lg:px-24">
+        <div class="max-w-xl">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight mb-6">Parlons ensemble de votre projet</h1>
+          <p class="text-base text-gray-300">Passionné par les histoires et les belles images, je mets ma passion au service de marques pour leur création de contenu.</p>
+        </div>
       </div>
+    </section>
 
-      <!-- Droite : formulaire -->
-      <div class="contact-form-panel rounded-2xl p-8">
-        <h2 class="text-xl font-medium mb-6 text-white">Envoyer un message</h2>
-        <form action="mailto:niangfode@gmail.com" method="post" enctype="text/plain" class="space-y-5 h-full flex flex-col">
-          <div class="flex-1">
-            <label class="block text-sm text-gray-400 mb-1" for="message">Message</label>
-            <textarea id="message" name="Message" required
-              class="w-full h-full min-h-64 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bordeaux transition resize-none"
-              placeholder="Décrivez votre projet..."></textarea>
-          </div>
+    <!-- Formulaire centré -->
+    <section class="py-16 px-4">
+      <div class="max-w-2xl mx-auto">
+        <form action="mailto:niangfode@gmail.com" method="post" enctype="text/plain" class="flex flex-col gap-4">
+          <label class="block text-sm text-gray-400" for="message">Message</label>
+          <textarea id="message" name="Message" required rows="15"
+            class="w-full border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bordeaux transition resize-none"
+            placeholder="Décrivez votre projet..."></textarea>
           <button type="submit"
             class="w-full bg-bordeaux hover:bg-bordeaux-dark text-white font-semibold py-3 rounded-full transition cursor-pointer">
             Envoyer
           </button>
         </form>
       </div>
+    </section>
 
-    </div>
   </main>
 
   <!-- Réseaux sociaux -->
