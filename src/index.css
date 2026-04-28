@@ -1,3 +1,212 @@
 #videoModal.hidden {
-    display: none;
-  }
+  display: none;
+}
+
+#heroVideo::-webkit-media-controls,
+#heroVideo::-webkit-media-controls-panel,
+#heroVideo::-webkit-media-controls-play-button,
+#heroVideo::-webkit-media-controls-start-playback-button,
+#heroVideo::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* Section clips — fond neutre visible en dark et light mode */
+#clipsSection {
+  background-color: #1a1a1a;
+}
+
+[data-theme="light"] #clipsSection {
+  background-color: #f0f0f0;
+}
+
+
+/* ══════════════════════════════════════
+   DARK MODE (défaut)
+   ══════════════════════════════════════ */
+
+/* Sections à fond blanc → fond sombre en dark mode */
+html:not([data-theme="light"]) .bg-white {
+  background-color: #000000 !important;
+}
+
+/* Texte noir dans les sections blanches → blanc */
+html:not([data-theme="light"]) .bg-white p:not([class*="text-gray"]),
+html:not([data-theme="light"]) .bg-white h1,
+html:not([data-theme="light"]) .bg-white h2,
+html:not([data-theme="light"]) .bg-white h3,
+html:not([data-theme="light"]) .bg-white span,
+html:not([data-theme="light"]) .bg-white a:not([class*="bg-bordeaux"]):not([class*="text-gray"]) {
+  color: #fff !important;
+}
+
+html:not([data-theme="light"]) .bg-white a:not([class*="bg-bordeaux"]):not([class*="text-gray"]):hover {
+  color: #6b0c1e !important;
+}
+
+html:not([data-theme="light"]) .bg-white a.text-gray-400:hover,
+html:not([data-theme="light"]) .bg-white a.text-gray-500:hover {
+  color: #6b0c1e !important;
+}
+
+[data-theme="light"] a.text-gray-500:hover {
+  color: #6b0c1e !important;
+}
+
+/* Texte black explicite → blanc */
+html:not([data-theme="light"]) .text-black {
+  color: #fff !important;
+}
+
+/* Cards dans interventions → fond sombre */
+html:not([data-theme="light"]) .rounded-lg.shadow-lg {
+  background-color: #1a1a1a !important;
+  border-color: #000000 !important;
+}
+
+/* Body interventions (bg-white text-black) → sombre */
+html:not([data-theme="light"]) body.bg-white {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Mediatone logo noir → blanc sur fond sombre */
+html:not([data-theme="light"]) #logoMediatone {
+  filter: invert(1) brightness(2);
+}
+
+/* ══════════════════════════════════════
+   LIGHT MODE
+   ══════════════════════════════════════ */
+
+[data-theme="light"] body,
+body[data-theme="light"] {
+  background-color: #fff !important;
+  color: #000000 !important;
+}
+
+/* Fond noir → blanc */
+[data-theme="light"] .bg-black {
+  background-color: #fff !important;
+}
+
+/* Header → fond blanc */
+[data-theme="light"] header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Texte blanc → sombre */
+[data-theme="light"] .text-white {
+  color: #000000 !important;
+}
+
+[data-theme="light"] .text-gray-200 {
+  color: #374151 !important;
+}
+
+[data-theme="light"] .text-gray-400,
+[data-theme="light"] .text-gray-500 {
+  color: #6b7280 !important;
+}
+
+[data-theme="light"] a.text-gray-400:hover {
+  color: #6b0c1e !important;
+}
+
+/* Nav links → sombres */
+[data-theme="light"] header a:not([class*="bg-bordeaux"]),
+[data-theme="light"] header span,
+[data-theme="light"] header button {
+  color: #000000 !important;
+}
+
+/* Sections blanches → restent blanches */
+[data-theme="light"] .bg-white {
+  background-color: #fff !important;
+}
+
+[data-theme="light"] .bg-white p:not([class*="text-gray"]),
+[data-theme="light"] .bg-white h1,
+[data-theme="light"] .bg-white h2,
+[data-theme="light"] .bg-white h3 {
+  color: #000000 !important;
+}
+
+/* Cards → restent blanches */
+[data-theme="light"] .rounded-lg.shadow-lg {
+  background-color: #fff !important;
+}
+
+/* Body interventions → reste blanc */
+[data-theme="light"] body.bg-white {
+  background-color: #fff !important;
+  color: #000000 !important;
+}
+
+/* Boutons bordeaux → gardent le bordeaux et le texte blanc */
+[data-theme="light"] .bg-bordeaux,
+[data-theme="light"] .bg-bordeaux span {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .bg-bordeaux svg {
+  fill: #ffffff !important;
+}
+
+/* Mediatone logo → reste noir sur fond blanc */
+[data-theme="light"] #logoMediatone {
+  filter: none !important;
+}
+
+/* Formulaire contact */
+[data-theme="light"] .bg-gray-900 {
+  background-color: #f3f4f6 !important;
+  color: #000000 !important;
+}
+
+[data-theme="light"] .border-gray-800 {
+  border-color: #e5e7eb !important;
+}
+
+[data-theme="light"] .border-gray-700 {
+  border-color: #d1d5db !important;
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea {
+  color: #000000 !important;
+  background-color: #fff !important;
+}
+
+/* ══════════════════════════════════════
+   HERO (texte toujours blanc sur vidéo)
+   ══════════════════════════════════════ */
+
+[data-theme="light"] .h-screen .relative.z-10 p {
+  color: #6b0c1e !important;
+}
+
+[data-theme="light"] .h-screen .relative.z-10 h1 {
+  color: #ffffff !important;
+}
+
+/* ══════════════════════════════════════
+   TOGGLE LUNE / SOLEIL
+   ══════════════════════════════════════ */
+
+#iconSun  { display: none; }
+#iconMoon { display: block; }
+
+[data-theme="light"] #iconSun  { display: block; }
+[data-theme="light"] #iconMoon { display: none; }
+
+
+[data-theme="light"] #themeToggle:hover {
+  color: #6b0c1e !important;
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] textarea:focus {
+  border-color: #6b0c1e !important;
+}

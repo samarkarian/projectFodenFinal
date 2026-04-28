@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fodé Niang - Réalisations</title>
+  <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/output.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="realisations.js" defer></script>
+  <script src="theme.js" defer></script>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-90">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex shrink-0 items-center gap-3 hover:opacity-80 transition">
+        <img src="./content/photoprofil1.png" alt="Fodé Niang" class="w-10 h-10 rounded-full object-cover border-2 border-bordeaux">
+        <span class="hidden sm:inline text-lg sm:text-xl font-semibold hover:text-bordeaux transition">Fodé Niang</span>
+      </a>
+      <nav class="flex items-center gap-4 sm:gap-6">
+        <a href="index.html" class="text-sm sm:text-base font-medium hover:text-bordeaux transition">Accueil</a>
+        <a href="realisations.html" class="text-sm sm:text-base font-medium text-bordeaux border-b-2 border-bordeaux pb-0.5">Réalisations</a>
+        <a href="contact.html" class="text-sm sm:text-base font-medium bg-bordeaux hover:bg-bordeaux-dark px-4 py-2 rounded-full transition">Contact</a>
+        <button id="themeToggle" aria-label="Changer le thème" class="cursor-pointer text-white hover:text-bordeaux transition">
+          <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- 2ème section -->
+  <section class="bg-white relative w-full mt-16">
+    <div id="videoModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-90 items-center justify-center">
+      <div class="relative w-full max-w-6xl">
+        <button id="closeModal" class="absolute top-4 right-4 text-white text-2xl cursor-pointer">&times;</button>
+        <video id="modalVideo" controls autoplay class="w-full h-[80vh] rounded-lg">
+          <source src="" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 p-2 sm:p-6">
+      <!-- 1 -->
+      <div class="relative overflow-hidden h-[40vh] sm:h-[50vh] md:h-[60vh] video-thumbnail cursor-pointer" data-video-src="https://foden.s3.fr-par.scw.cloud/MARCADET.mp4">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover pointer-events-none">
+          <source src="https://foden.s3.fr-par.scw.cloud/MARCADET.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+      </div>
+
+      <!-- 2 -->
+      <div class="relative overflow-hidden h-[40vh] sm:h-[50vh] md:h-[60vh] video-thumbnail cursor-pointer" data-video-src="https://foden.s3.fr-par.scw.cloud/MARINE%20COMPRESSE%CC%81.mp4">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover pointer-events-none">
+          <source src="https://foden.s3.fr-par.scw.cloud/MARINE%20COMPRESSE%CC%81.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+      </div>
+
+      <!-- 3 -->
+      <div class="relative overflow-hidden h-[40vh] sm:h-[50vh] md:h-[60vh] video-thumbnail cursor-pointer" data-video-src="https://foden.s3.fr-par.scw.cloud/occaz-couplet-1.mp4">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover pointer-events-none">
+          <source src="https://foden.s3.fr-par.scw.cloud/occaz-couplet-1.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+      </div>
+
+      <!-- 4 -->
+      <div class="relative overflow-hidden h-[40vh] sm:h-[50vh] md:h-[60vh] video-thumbnail cursor-pointer" data-video-src="https://foden.s3.fr-par.scw.cloud/VISION.MP4">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover pointer-events-none">
+          <source src="https://foden.s3.fr-par.scw.cloud/VISION.MP4" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- Section YouTube -->
+    <section class="py-12 px-4 sm:px-8 bg-black">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-8 max-w-7xl mx-auto mb-12">
+        <div class="w-full lg:w-1/2 aspect-video">
+          <iframe
+            class="w-full h-full rounded-lg shadow-2xl"
+            src="https://www.youtube.com/embed/hWbiSY8gPUA"
+            title="Vidéo YouTube 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="w-full lg:w-1/2 aspect-video">
+          <iframe
+            class="w-full h-full rounded-lg shadow-2xl"
+            src="https://www.youtube.com/embed/Ysar2i6EJME"
+            title="Vidéo YouTube 2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Réseaux sociaux -->
+    <div class="flex justify-center gap-8 mb-2">
+        <a href="https://www.youtube.com/@Songefilms" target="_blank" class="flex items-center gap-2 text-black hover:opacity-70 transition font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+        <span>YouTube</span>
+        </a>
+        <a href="https://www.instagram.com/songe__prod/" target="_blank" class="flex items-center gap-2 text-black hover:opacity-70 transition font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <span>Instagram</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6 text-center">
+      <p class="text-gray-500 text-sm">
+        Copyright &copy; 2025 &nbsp;|&nbsp; Powered by <a href="https://www.instagram.com/ohanes69/" target="_blank" class="hover:text-bordeaux transition">@ohanes69</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

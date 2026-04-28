@@ -1,0 +1,11 @@
+{
+  "name": "Fodé Niang",
+  "short_name": "Fodé Niang",
+  "icons": [
+    { "src": "/favicon/favicon-96x96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "/favicon/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "theme_color": "#6b0c1e",
+  "background_color": "#000000",
+  "display": "standalone"
+}

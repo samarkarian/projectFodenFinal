@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bordeaux: #6b0c1e;
+  --color-bordeaux-dark: #4f0915;
+}

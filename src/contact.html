@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fodé Niang - Contact</title>
+  <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/output.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
+  <script src="theme.js" defer></script>
+</head>
+<body class="bg-black text-white font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-90">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex shrink-0 items-center gap-3 hover:opacity-80 transition">
+        <img src="./content/photoprofil1.png" alt="Fodé Niang" class="w-10 h-10 rounded-full object-cover border-2 border-bordeaux">
+        <span class="hidden sm:inline text-lg sm:text-xl font-semibold hover:text-bordeaux transition">Fodé Niang</span>
+      </a>
+      <nav class="flex items-center gap-4 sm:gap-6">
+        <a href="index.html" class="text-sm sm:text-base font-medium hover:text-bordeaux transition">Accueil</a>
+        <a href="realisations.html" class="text-sm sm:text-base font-medium hover:text-bordeaux transition">Réalisations</a>
+        <a href="contact.html" class="text-sm sm:text-base font-medium bg-bordeaux hover:bg-bordeaux-dark px-4 py-2 rounded-full transition">Contact</a>
+        <button id="themeToggle" aria-label="Changer le thème" class="cursor-pointer text-white hover:text-bordeaux transition">
+          <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1 flex items-center justify-center pt-20 pb-12 px-4 mt-14">
+    <div class="contact-grid w-full max-w-5xl mx-auto">
+
+      <!-- Gauche : photo -->
+      <div class="contact-photo-panel rounded-2xl overflow-hidden">
+        <img src="./content/IMG_8592.JPG" alt="Fodé Niang" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Droite : formulaire -->
+      <div class="contact-form-panel rounded-2xl p-8">
+        <h2 class="text-xl font-medium mb-6 text-white">Envoyer un message</h2>
+        <form action="mailto:niangfode@gmail.com" method="post" enctype="text/plain" class="space-y-5 h-full flex flex-col">
+          <div class="flex-1">
+            <label class="block text-sm text-gray-400 mb-1" for="message">Message</label>
+            <textarea id="message" name="Message" required
+              class="w-full h-full min-h-64 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bordeaux transition resize-none"
+              placeholder="Décrivez votre projet..."></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-bordeaux hover:bg-bordeaux-dark text-white font-semibold py-3 rounded-full transition cursor-pointer">
+            Envoyer
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Réseaux sociaux -->
+    <div class="flex justify-center gap-8 mb-2">
+        <a href="https://www.youtube.com/@Songefilms" target="_blank" class="flex items-center gap-2 text-black hover:opacity-70 transition font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+        <span>YouTube</span>
+        </a>
+        <a href="https://www.instagram.com/songe__prod/" target="_blank" class="flex items-center gap-2 text-black hover:opacity-70 transition font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <span>Instagram</span>
+        </a>
+    </div>
+
+  <footer class="py-6 text-center">
+    <p class="text-gray-500 text-sm">
+      Copyright &copy; 2025 &nbsp;|&nbsp; Powered by <a href="https://www.instagram.com/ohanes69/" target="_blank" class="hover:text-bordeaux transition">@ohanes69</a>
+    </p>
+  </footer>
+
+</body>
+</html>
