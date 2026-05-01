@@ -9,6 +9,21 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
   <link rel="manifest" href="./favicon/site.webmanifest" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    try {
+      document.documentElement.style.cssText = 'background:#000;visibility:hidden';
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!sessionStorage.getItem('vp')) {
+          sessionStorage.setItem('vp', '1');
+          location.reload();
+        } else {
+          document.documentElement.style.cssText = '';
+        }
+      });
+    } catch(e) {
+      document.documentElement.style.cssText = '';
+    }
+  </script>
   <link rel="stylesheet" href="./public/output.css">
   <link rel="stylesheet" href="index.css">
   <script src="theme.js" defer></script>
